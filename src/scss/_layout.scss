@@ -1,0 +1,7 @@
+@import 'variables';
+
+body {
+  max-width: $container;
+  margin: auto;
+  color: $base-color;
+}

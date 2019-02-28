@@ -313,6 +313,8 @@ body {
     padding-bottom: 8px;
     padding-left: 6px;
     padding-right: 6px; }
+    .intro__more-btn:hover {
+      cursor: pointer; }
   @media (max-width: 768px) {
     .intro__title {
       font-size: 2rem; } }
@@ -421,12 +423,16 @@ body {
   .app__title {
     margin-top: 0;
     font-size: 2rem;
-    font-weight: normal;
-    line-height: 1.5; }
+    line-height: 2.75rem;
+    font-weight: 400; }
+    @media (max-width: 375px) {
+      .app__title {
+        font-size: 1.8rem; } }
   .app__text {
     font-size: 1rem;
-    line-height: 1.4375rem;
-    letter-spacing: 0.5px; }
+    line-height: 1.5rem;
+    letter-spacing: 0.0313rem;
+    margin-bottom: 1.25rem; }
   .app__button {
     display: grid;
     grid-template-columns: 1fr 4fr;
@@ -442,7 +448,7 @@ body {
       height: auto;
       margin-right: 16px;
       border-radius: 50%;
-      background: #1b2979; }
+      background: #fff; }
       @media (max-width: 768px) {
         .app__button .app-button__img {
           margin: 0 auto; } }

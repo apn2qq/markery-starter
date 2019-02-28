@@ -116,6 +116,10 @@
     padding-bottom: 8px;
     padding-left: 6px;
     padding-right: 6px;
+
+    &:hover {
+      cursor: pointer;
+    }
   }
 
   @media (max-width: $md) {
@@ -259,14 +263,19 @@
   &__title {
     margin-top: 0;
     font-size: 2rem;
-    font-weight: normal;
-    line-height: 1.5;
+    line-height: 2.75rem;
+    font-weight: 400;
+
+    @media (max-width: $sm) {
+      font-size: 1.8rem;
+    }
   }
 
   &__text {
     font-size: 1rem;
-    line-height: 1.4375rem;
-    letter-spacing: 0.5px;
+    line-height: 1.5rem;
+    letter-spacing: 0.0313rem;
+    margin-bottom: 1.25rem;
   }
 
   &__button {
@@ -285,7 +294,7 @@
       height: auto;
       margin-right: 16px;
       border-radius: 50%;
-      background: #1b2979;
+      background: #fff;
 
       @media (max-width: $md) {
         margin: 0 auto;

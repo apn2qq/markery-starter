@@ -195,13 +195,6 @@
   }
 }
 
-// .app {
-//   height: 350px;
-//   width: 100%;
-//   background: url('../img/pattern.svg');
-//   background-color: $base-color;
-// }
-
 .app__wrapper {
   display: grid;
   grid-template-columns: 2fr 1fr;
@@ -220,7 +213,7 @@
   height: 350px;
   width: 100%;
   padding: 40px 78px;
-  background: linear-gradient(90deg, #1b2979 0%, #3f93f2 100%), url(/img/pattern.svg);
+  background: url('../img/pattern.svg'), linear-gradient(90deg, #1b2979 0%, #3f93f2 100%);
   border-radius: 20px;
 
   &__content {

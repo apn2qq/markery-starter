@@ -320,6 +320,54 @@ body {
       font-size: 1.8rem;
       line-height: 2.4rem; } }
 
+.features {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 32px;
+  margin: 32px; }
+  @media (max-width: 768px) {
+    .features {
+      grid-template-columns: 1fr;
+      justify-items: center; } }
+
+.feature {
+  max-width: 361px;
+  min-height: 315px;
+  background-image: linear-gradient(to bottom, #ebebf3, rgba(220, 220, 220, 0));
+  padding-left: 32px;
+  justify-content: stretch;
+  display: grid;
+  grid-auto-rows: 6rem minmax(1rem, auto);
+  border-radius: 10px; }
+  .feature__number {
+    font-size: 9.375rem;
+    color: #fff; }
+  .feature__title {
+    font-weight: 600;
+    font-size: 1.25rem;
+    letter-spacing: 0.0394rem;
+    color: #1b2979; }
+  .feature__text {
+    max-width: 264px;
+    line-height: 1.4375rem;
+    font-size: 1rem;
+    letter-spacing: 0.0315rem;
+    color: #637097; }
+  .feature__button {
+    background: #1b2979;
+    border: 1px solid #0f1a53;
+    box-sizing: border-box;
+    box-shadow: 0px 8px 13px rgba(27, 41, 121, 0.214844);
+    border-radius: 4px;
+    color: #fff;
+    max-width: 217px;
+    padding: 11px;
+    line-height: 1.75rem;
+    font-size: 0.875rem;
+    text-align: center;
+    letter-spacing: 0.0988rem;
+    text-transform: uppercase; }
+
 .app {
   height: 350px;
   width: 100%;

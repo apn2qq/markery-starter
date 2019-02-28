@@ -226,6 +226,10 @@
     }
   }
 
+  @media (max-width: $container) {
+    padding: 16px;
+  }
+
   @media (max-width: $container-sm) {
     max-width: initial;
     justify-content: center;
@@ -319,10 +323,6 @@
       margin-right: 16px;
       border-radius: 50%;
       background: #fff;
-
-      @media (max-width: $md) {
-        margin: 0 auto;
-      }
     }
 
     .app-button__text {

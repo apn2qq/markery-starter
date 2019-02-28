@@ -396,6 +396,9 @@ body {
     text-transform: uppercase; }
     .feature__button:hover {
       cursor: pointer; }
+  @media (max-width: 1140px) {
+    .feature {
+      padding: 16px; } }
   @media (max-width: 1024px) {
     .feature {
       max-width: initial;
@@ -466,9 +469,6 @@ body {
       margin-right: 16px;
       border-radius: 50%;
       background: #fff; }
-      @media (max-width: 768px) {
-        .app__button .app-button__img {
-          margin: 0 auto; } }
     .app__button .app-button__text {
       font-size: 1rem;
       text-transform: capitalize;

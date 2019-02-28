@@ -5,6 +5,9 @@
   "dependencies": {
     "browser-sync": "^2.26.3",
     "gulp": "3.9.1",
-    "gulp-sass": "^4.0.2"
+    "gulp-sass": "^4.0.2",
+    "stylelint": "^9.10.1",
+    "stylelint-config-concentric-order": "^3.4.1",
+    "stylelint-config-prettier": "^5.0.0"
   }
 }

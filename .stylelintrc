@@ -1,0 +1,6 @@
+{
+  "extends": [
+    "stylelint-config-concentric-order",
+		"stylelint-config-prettier",
+  ],
+}

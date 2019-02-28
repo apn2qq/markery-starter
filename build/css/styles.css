@@ -220,6 +220,7 @@ body {
   font-weight: 400; }
 
 .container {
+  position: relative;
   max-width: 1140px;
   width: auto;
   margin-left: auto;
@@ -320,16 +321,30 @@ body {
       font-size: 1.8rem;
       line-height: 2.4rem; } }
 
+.features__wrapper {
+  position: relative; }
+  .features__wrapper:before {
+    content: '';
+    background: url("../img/dots-palette.svg");
+    position: absolute;
+    top: 43px;
+    left: 0;
+    width: 267px;
+    height: 268px; }
+    @media (max-width: 1024px) {
+      .features__wrapper:before {
+        display: none; } }
+
 .features {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-gap: 32px;
   margin-top: 178px;
   margin-bottom: 128px; }
-  @media (max-width: 768px) {
+  @media (max-width: 1024px) {
     .features {
       grid-template-columns: 1fr;
-      justify-items: center; } }
+      justify-items: stretch; } }
 
 .feature {
   max-width: 361px;
@@ -372,6 +387,10 @@ body {
     text-transform: uppercase; }
     .feature__button:hover {
       cursor: pointer; }
+  @media (max-width: 1024px) {
+    .feature {
+      max-width: initial;
+      justify-content: center; } }
 
 .app__wrapper {
   display: grid;
@@ -380,6 +399,9 @@ body {
   .app__wrapper .app-wrapper__img {
     grid-column: 2;
     grid-row: 1/3; }
+  @media (max-width: 800px) {
+    .app__wrapper .app-wrapper__img {
+      display: none; } }
 
 .app {
   display: grid;
@@ -393,6 +415,9 @@ body {
   .app__content {
     max-width: 400px;
     color: #fff; }
+    @media (max-width: 768px) {
+      .app__content {
+        max-width: initial; } }
   .app__title {
     margin-top: 0;
     font-size: 2rem;
@@ -418,11 +443,18 @@ body {
       margin-right: 16px;
       border-radius: 50%;
       background: #1b2979; }
+      @media (max-width: 768px) {
+        .app__button .app-button__img {
+          margin: 0 auto; } }
     .app__button .app-button__text {
       font-size: 16px;
       text-transform: capitalize;
       letter-spacing: 0.266667px;
       color: #1b2979; }
+  @media (max-width: 768px) {
+    .app {
+      height: auto;
+      padding: 2rem; } }
 
 .footer {
   padding: 48px;

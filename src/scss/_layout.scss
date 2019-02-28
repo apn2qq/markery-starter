@@ -1,7 +1,175 @@
 @import 'variables';
 
-body {
+.container {
   max-width: $container;
-  margin: auto;
-  color: $base-color;
+  width: auto;
+  margin-left: auto;
+  margin-right: auto;
+
+  @media (max-width: $md) {
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+}
+
+.notice {
+  background-color: #2d3596;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  &__alert {
+    background-color: #ff9848;
+    border-radius: 2px;
+    text-transform: uppercase;
+    color: #fff;
+    font-size: 0.75rem;
+    font-weight: 400;
+    padding: 4px 14px;
+    margin: 8px 8px 8px 0;
+  }
+
+  &__message {
+    color: #fff;
+    font-size: 0.8125rem;
+    line-height: 1.2rem;
+  }
+
+  @media (max-width: $md) {
+    padding-left: 16px;
+    padding-right: 16px;
+
+    &__alert {
+      margin-right: 16px;
+    }
+  }
+}
+
+.header {
+  margin-top: 78px;
+  text-align: center;
+
+  &__description {
+    color: #808fbc;
+    font-size: 0.625rem;
+    font-weight: 200;
+  }
+
+  &__title {
+    color: #1b2979;
+    text-transform: uppercase;
+    font-size: 1rem;
+    letter-spacing: 4px;
+    font-weight: 400;
+    margin-top: 27px;
+  }
+}
+
+.intro {
+  position: relative;
+  text-align: center;
+  max-width: 786px;
+  margin-left: auto;
+  margin-right: auto;
+
+  &__title {
+    text-align: center;
+    font-size: 2.5rem;
+    line-height: 3.4375rem;
+    color: $base-color;
+    font-weight: 400;
+  }
+
+  &__description {
+    color: $base-color;
+    max-width: 494px;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 1rem;
+    letter-spacing: 0.0169rem;
+    font-weight: 400;
+    line-height: 1.5625rem;
+    font-family: 'Muli', sans-serif;
+  }
+
+  &__illustration {
+    margin-top: 40px;
+    display: block;
+    max-width: 100%;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  &__more-btn {
+    padding: 0;
+    margin: 0;
+    background-color: transparent;
+    border: 0;
+    transform: rotate(-90deg);
+    text-transform: uppercase;
+    color: $base-color;
+    font-size: 0.75rem;
+    letter-spacing: 0.3362rem;
+    border-bottom: solid 2px $base-color;
+    padding-bottom: 8px;
+    padding-left: 6px;
+    padding-right: 6px;
+  }
+
+  @media (max-width: $md) {
+    &__title {
+      font-size: 2rem;
+    }
+  }
+
+  @media (max-width: $xs) {
+    &__title {
+      font-size: 1.8rem;
+      line-height: 2.4rem;
+    }
+  }
+}
+
+.app {
+  height: 350px;
+  width: 100%;
+  background-color: $base-color;
+}
+
+.footer {
+  padding: 48px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.copyright {
+  font-family: 'Muli', sans-serif;
+  font-size: 0.875rem;
+  letter-spacing: 0.005rem;
+  line-height: 1.25rem;
+  color: #8288a5;
+}
+
+.social {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+
+  li {
+    display: inline-block;
+  }
+
+  &__link {
+    display: block;
+    background-color: #606585;
+    padding: 8px;
+    border-radius: 50%;
+
+    img {
+      display: block;
+      max-width: 16px;
+      height: auto;
+    }
+  }
 }

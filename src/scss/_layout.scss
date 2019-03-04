@@ -47,7 +47,6 @@
 }
 
 .header {
-  margin-top: 78px;
   text-align: center;
 
   &__description {
@@ -63,6 +62,14 @@
     color: #1b2979;
     font-size: 1rem;
     font-weight: 400;
+  }
+
+  &__logo {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 37px;
+    margin-bottom: 27px;
   }
 }
 
@@ -365,10 +372,17 @@
 }
 
 .footer {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
   padding: 48px;
+
+  &__logo {
+    display: block;
+    margin-bottom: 40px;
+  }
+
+  &__inner {
+    display: flex;
+    justify-content: space-between;
+  }
 
   @media (max-width: $lg) {
     padding-right: 16px;
@@ -376,7 +390,15 @@
   }
 
   @media (max-width: $md) {
-    flex-direction: column;
+    &__inner {
+      align-items: center;
+      flex-direction: column;
+    }
+
+    &__logo {
+      margin-left: auto;
+      margin-right: auto;
+    }
   }
 }
 
